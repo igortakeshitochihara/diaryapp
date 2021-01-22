@@ -1,13 +1,22 @@
-package br.com.diary.diaryapp
+package br.com.diary.diaryapp.view.main
 
 import android.os.Bundle
+import android.util.Log
 import com.google.android.material.floatingactionbutton.FloatingActionButton
 import com.google.android.material.snackbar.Snackbar
 import androidx.appcompat.app.AppCompatActivity
 import android.view.Menu
 import android.view.MenuItem
+import br.com.diary.diaryapp.R
+import br.com.diary.diaryapp.base.Util
+import br.com.diary.diaryapp.model.Auth
+import br.com.diary.diaryapp.model.User
+import br.com.diary.diaryapp.presenter.LoginPresenter
+import br.com.diary.diaryapp.view.login.LoginView
 
-class MainActivity : AppCompatActivity() {
+class MainActivity : AppCompatActivity(), LoginView {
+
+    private lateinit var presenter: LoginPresenter
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -18,6 +27,10 @@ class MainActivity : AppCompatActivity() {
             Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
                     .setAction("Action", null).show()
         }
+
+        presenter = LoginPresenter(this)
+
+        presenter.login("testigor@test.com", "123456")
     }
 
     override fun onCreateOptionsMenu(menu: Menu): Boolean {
@@ -34,5 +47,16 @@ class MainActivity : AppCompatActivity() {
             R.id.action_settings -> true
             else -> super.onOptionsItemSelected(item)
         }
+    }
+
+    override fun loginSuccess(auth: Auth) {
+        Util().prefs.setPreference("TOKEN", auth.token);
+        Log.e("TOKEN", auth.token)
+        Log.e("USER", auth.user.name)
+        Log.e("TOKEN_PREFS", Util().prefs.getPreference("TOKEN"))
+    }
+
+    override fun loginError(message: String) {
+        Log.e("MESSAGE", message)
     }
 }
