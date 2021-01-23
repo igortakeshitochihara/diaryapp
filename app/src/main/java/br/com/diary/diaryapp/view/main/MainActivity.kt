@@ -22,6 +22,7 @@ class MainActivity : AppCompatActivity(), LoginView {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
         setSupportActionBar(findViewById(R.id.toolbar))
+        supportActionBar?.setDisplayShowTitleEnabled(false)
 
         findViewById<FloatingActionButton>(R.id.fab).setOnClickListener { view ->
             Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)

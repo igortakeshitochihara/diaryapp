@@ -6,4 +6,5 @@ class Util {
     val prefs: Prefs by lazy {
         Prefs(App.instance)
     }
+
 }

@@ -1,4 +1,6 @@
 package br.com.diary.diaryapp.view.login
 
-class LoginActivity {
+import androidx.appcompat.app.AppCompatActivity
+
+class LoginActivity : AppCompatActivity() {
 }
