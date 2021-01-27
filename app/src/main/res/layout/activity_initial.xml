@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    tools:context=".view.initial.InitialActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_marginHorizontal="20dp"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_gravity="center"
+            android:contentDescription="@string/splash_icon_description"
+            android:src="@drawable/ic_calendar_white" />
+
+        <Button
+            android:id="@+id/btn_initial_login"
+            style="@style/ButtonPrimaryBorderWhiteColor"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:text="@string/button_text_initial_login"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/btn_initial_register"
+            style="@style/ButtonPrimaryBorderWhiteColor"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:text="@string/button_text_initial_register"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+
+</RelativeLayout>

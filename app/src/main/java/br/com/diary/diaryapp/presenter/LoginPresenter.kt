@@ -1,6 +1,11 @@
 package br.com.diary.diaryapp.presenter
 
+import android.content.res.Resources
+import android.provider.Settings.Global.getString
 import android.util.Log
+import androidx.core.content.res.TypedArrayUtils.getText
+import br.com.diary.diaryapp.R
+import br.com.diary.diaryapp.base.Util
 import br.com.diary.diaryapp.model.Auth
 import br.com.diary.diaryapp.model.Login
 import br.com.diary.diaryapp.service.APIService
@@ -17,13 +22,14 @@ class LoginPresenter(val view: LoginView) {
             ) {
                 response.body()?.let {
                     val auth: Auth = it
-                    if (response.code() == 200) view.loginSuccess(auth) else view.loginError("Erro ao logar")
+                    if (response.code() == 200)
+                        view.loginSuccess(auth)
                 }
-
+                view.loginError(response.message())
             }
 
             override fun onFailure(call: retrofit2.Call<Auth?>, t: Throwable) {
-                view.loginError("Erro ao logar")
+                view.loginError(Util().getStringValue(R.string.error_message_generic))
                 Log.e("onFailure error", t.message.toString())
             }
         })

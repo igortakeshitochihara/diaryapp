@@ -11,4 +11,19 @@
     <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
 
     <string name="splash_icon_description">Splash Icon</string>
+
+    <string name="error_message_generic">Aconteceu algum erro :( Tente mais tarde.</string>
+
+    <!--INITIAL-->
+    <string name="button_text_initial_login">Logar</string>
+    <string name="button_text_initial_register">Registrar-se</string>
+
+    <!--LOGIN-->
+    <string name="edit_text_email_hint">Digite seu email</string>
+    <string name="edit_text_password_hint">Digite sua senha</string>
+    <string name="button_text_login_send">Enviar</string>
+    <string name="button_text_login_forgot">Esqueceu sua senha?</string>
+    <string name="button_text_forgot_send">Recuperar</string>
+    <string name="button_text_forgot_back">Voltar</string>
+
 </resources>

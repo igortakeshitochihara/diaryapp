@@ -1,3 +1,10 @@
 <resources>
     <dimen name="fab_margin">16dp</dimen>
+
+    <dimen name="radius_default">25dp</dimen>
+
+    <!--EDIT BOX-->
+    <dimen name="edit_box_padding">15dp</dimen>
+    <dimen name="edit_box_text_size">13dp</dimen>
+
 </resources>

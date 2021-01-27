@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_login"
+    app:startDestination="@id/login_fragment">
+
+    <fragment
+        android:id="@+id/login_fragment"
+        android:name="br.com.diary.diaryapp.view.login.LoginFragment"
+        android:label="@string/first_fragment_label"
+        android:layout="@layout/fragment_login">
+
+        <action
+            android:id="@+id/action_login_fragment_to_forgot_fragment"
+            app:destination="@id/forgot_fragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/forgot_fragment"
+        android:name="br.com.diary.diaryapp.view.login.ForgotFragment"
+        android:layout="@layout/fragment_forgot">
+
+        <action
+            android:id="@+id/action_forgot_fragment_to_login_fragment"
+            app:destination="@id/login_fragment" />
+    </fragment>
+
+</navigation>

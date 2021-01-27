@@ -1,7 +1,7 @@
 package br.com.diary.diaryapp.base
 
-class BasePresenter(view: BaseView) {
-    fun onError() {
+open class BasePresenter(view: BaseView) {
 
+    fun onError() {
     }
 }

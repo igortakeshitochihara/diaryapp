@@ -16,4 +16,43 @@
 
     <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
 
+    <!--EDIT TEXT STYLE-->
+    <style name="EditTextGraySoft">
+        <item name="android:padding">@dimen/edit_box_padding</item>
+        <item name="android:background">@drawable/back_gray_soft</item>
+        <item name="android:textSize">@dimen/edit_box_text_size</item>
+        <item name="android:textColor">#888888</item>
+        <item name="android:maxLines">1</item>
+    </style>
+
+    <!--BUTTON STYLE-->
+    <style name="ButtonPrimaryColor">
+        <item name="android:padding">@dimen/edit_box_padding</item>
+        <item name="android:background">@drawable/back_primary_color</item>
+        <item name="android:textSize">@dimen/edit_box_text_size</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:maxLines">1</item>
+    </style>
+
+    <style name="ButtonGrayMediumColor">
+        <item name="android:padding">@dimen/edit_box_padding</item>
+        <item name="android:background">@drawable/back_gray_medium</item>
+        <item name="android:textSize">@dimen/edit_box_text_size</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:maxLines">1</item>
+    </style>
+
+    <style name="ButtonPrimaryBorderWhiteColor">
+        <item name="android:padding">@dimen/edit_box_padding</item>
+        <item name="android:background">@drawable/back_primary_border_white_color</item>
+        <item name="android:textSize">@dimen/edit_box_text_size</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:maxLines">1</item>
+    </style>
+
+    <style name="ButtonCircleWhiteBorderPrimaryColor">
+        <item name="android:padding">@dimen/edit_box_padding</item>
+        <item name="android:background">@drawable/back_circle_white_border_primary_color</item>
+    </style>
+
 </resources>

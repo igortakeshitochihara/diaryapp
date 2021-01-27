@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".view.login.LoginFragment">
+
+    <EditText
+        android:id="@+id/email"
+        style="@style/EditTextGraySoft"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:autofillHints="Email"
+        android:hint="@string/edit_text_email_hint"
+        android:imeOptions="actionNext"
+        android:inputType="textEmailAddress"
+        android:nextFocusForward="@+id/password" />
+
+    <EditText
+        android:id="@+id/password"
+        style="@style/EditTextGraySoft"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:autofillHints="Senha"
+        android:hint="@string/edit_text_password_hint"
+        android:imeOptions="actionSend"
+        android:inputType="textPassword" />
+
+    <TextView
+        android:id="@+id/tv_forgot"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end"
+        android:layout_marginTop="20dp"
+        android:text="@string/button_text_login_forgot"
+        android:textAlignment="textEnd"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/btn_login_send"
+        style="@style/ButtonPrimaryColor"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:text="@string/button_text_login_send"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="40dp"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/ic_facebook"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:contentDescription="@string/splash_icon_description"
+            android:src="@drawable/ic_facebook" />
+
+        <ImageView
+            android:id="@+id/ic_twitter"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:contentDescription="@string/splash_icon_description"
+            android:src="@drawable/ic_twitter" />
+
+        <ImageView
+            android:id="@+id/ic_google_plus"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:contentDescription="@string/splash_icon_description"
+            android:src="@drawable/ic_google_plus" />
+
+    </LinearLayout>
+
+</LinearLayout>
