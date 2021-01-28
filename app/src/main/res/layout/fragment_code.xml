@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".view.register.CodeFragment">
+
+    <LinearLayout
+        android:id="@+id/ll_phone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/code1"
+            style="@style/EditTextCircleGraySoft"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:layout_weight="1"
+            android:autofillHints="Code 1"
+            android:gravity="center"
+            android:hint="@string/edit_text_pin_hint"
+            android:imeOptions="actionNext"
+            android:inputType="number"
+            android:maxLength="1"
+            android:nextFocusForward="@+id/code2" />
+
+        <EditText
+            android:id="@+id/code2"
+            style="@style/EditTextCircleGraySoft"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:layout_weight="1"
+            android:autofillHints="Code 2"
+            android:gravity="center"
+            android:hint="@string/edit_text_pin_hint"
+            android:imeOptions="actionNext"
+            android:inputType="number"
+            android:maxLength="1"
+            android:nextFocusForward="@+id/code3" />
+
+        <EditText
+            android:id="@+id/code3"
+            style="@style/EditTextCircleGraySoft"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:layout_weight="1"
+            android:autofillHints="Code 3"
+            android:gravity="center"
+            android:hint="@string/edit_text_pin_hint"
+            android:imeOptions="actionSend"
+            android:inputType="number"
+            android:maxLength="1"
+            android:nextFocusForward="@+id/code4" />
+
+        <EditText
+            android:id="@+id/code4"
+            style="@style/EditTextCircleGraySoft"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:layout_weight="1"
+            android:autofillHints="Code 4"
+            android:gravity="center"
+            android:hint="@string/edit_text_pin_hint"
+            android:imeOptions="actionNext"
+            android:inputType="number"
+            android:maxLength="1"
+            android:nextFocusForward="@+id/code5" />
+
+        <EditText
+            android:id="@+id/code5"
+            style="@style/EditTextCircleGraySoft"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:layout_weight="1"
+            android:autofillHints="Code 5"
+            android:gravity="center"
+            android:hint="@string/edit_text_pin_hint"
+            android:imeOptions="actionNext"
+            android:inputType="number"
+            android:maxLength="1"
+            android:nextFocusForward="@+id/code6" />
+
+        <EditText
+            android:id="@+id/code6"
+            style="@style/EditTextCircleGraySoft"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:autofillHints="Code 6"
+            android:gravity="center"
+            android:hint="@string/edit_text_pin_hint"
+            android:imeOptions="actionSend"
+            android:inputType="number"
+            android:maxLength="1" />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_code_send"
+        style="@style/ButtonPrimaryColor"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:text="@string/button_text_register_next"
+        android:textStyle="bold" />
+
+</LinearLayout>

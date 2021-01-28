@@ -26,4 +26,14 @@
     <string name="button_text_forgot_send">Recuperar</string>
     <string name="button_text_forgot_back">Voltar</string>
 
+    <!--REGISTER-->
+    <string name="edit_text_name_hint">Digite seu nome</string>
+    <string name="edit_text_ddd_hint">Digite o DDD</string>
+    <string name="edit_text_phone_hint">Digite seu número</string>
+    <string name="edit_text_new_password_hint">Digite a senha</string>
+    <string name="edit_text_confirm_password_hint">Digite a confirmação da senha</string>
+    <string name="edit_text_pin_hint">0</string>
+    <string name="button_text_register_next">Próximo</string>
+
+
 </resources>

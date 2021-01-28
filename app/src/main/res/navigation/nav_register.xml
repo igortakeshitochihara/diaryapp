@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/nav_register"
+    app:startDestination="@id/register_fragment">
+
+    <fragment
+        android:id="@+id/register_fragment"
+        android:name="br.com.diary.diaryapp.view.register.RegisterFragment"
+        android:layout="@layout/fragment_register">
+
+        <action
+            android:id="@+id/action_register_fragment_to_password_fragment"
+            app:destination="@id/password_fragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/password_fragment"
+        android:name="br.com.diary.diaryapp.view.register.PasswordFragment"
+        android:layout="@layout/fragment_password">
+
+        <action
+            android:id="@+id/action_password_fragment_to_code_fragment"
+            app:destination="@id/code_fragment" />
+        <action
+            android:id="@+id/action_password_fragment_to_register_fragment"
+            app:destination="@id/register_fragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/code_fragment"
+        android:name="br.com.diary.diaryapp.view.register.CodeFragment"
+        android:layout="@layout/fragment_code">
+    </fragment>
+
+</navigation>

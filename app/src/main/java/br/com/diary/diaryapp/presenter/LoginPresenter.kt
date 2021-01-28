@@ -14,8 +14,8 @@ import retrofit2.Callback
 
 class LoginPresenter(val view: LoginView) {
 
-    fun login(email: String, password: String) {
-        APIService.userService().login(Login(email, password)).enqueue(object : Callback<Auth?> {
+    fun login(login: Login) {
+        APIService.userService().login(login).enqueue(object : Callback<Auth?> {
             override fun onResponse(
                 call: retrofit2.Call<Auth?>,
                 response: retrofit2.Response<Auth?>

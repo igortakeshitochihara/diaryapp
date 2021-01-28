@@ -25,6 +25,14 @@
         <item name="android:maxLines">1</item>
     </style>
 
+    <style name="EditTextCircleGraySoft">
+        <item name="android:padding">@dimen/edit_box_padding</item>
+        <item name="android:background">@drawable/back_circle_gray_soft</item>
+        <item name="android:textSize">@dimen/edit_box_text_size</item>
+        <item name="android:textColor">#888888</item>
+        <item name="android:maxLines">1</item>
+    </style>
+
     <!--BUTTON STYLE-->
     <style name="ButtonPrimaryColor">
         <item name="android:padding">@dimen/edit_box_padding</item>
